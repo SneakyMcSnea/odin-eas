@@ -1,0 +1,94 @@
+#container {
+    display: block;
+    text-align: center;
+  
+  }
+  
+  #outer-grid-container {
+    display: flex;
+    width: 550px;
+    height: 550px;
+    background-color: #8B6145;
+    background-image:     url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    border-radius: 25px;
+    margin: auto;
+  }
+  
+  #grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-radius: 25px;
+  }
+  
+  .grid-box {
+    color: blue;
+    background: #efebdc;
+    border: 1px rgba(0,0,0,0.25) solid;
+  }
+  
+  .change-color {
+    background: black;
+  }
+  
+  #send-prompt {
+    margin: 10px;
+  }
+  
+  #clear {
+    margin: 10px;
+  }
+  
+  .top-left{
+    border-top-left-radius: 25px;
+  }
+  
+  .top-right{
+    border-top-right-radius: 25px;
+  }
+  
+  .bottom-left{
+    border-bottom-left-radius: 25px;
+  }
+  
+  .bottom-right{
+    border-bottom-right-radius: 25px;
+  }
+  
+  .button-89 {
+    --b: 3px;   /* border thickness */
+    --s: .45em; /* size of the corner */
+    --color: #373B44;
+    
+    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+    color: var(--color);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .6em;
+    font-size: 16px;
+  
+    border: 0;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-89:hover,
+  .button-89:focus-visible{
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+  }
+  
+  .button-89:active {
+    background: var(--color);
+    color: #fff;
+  }
