@@ -44,7 +44,10 @@ function createGrid (squares, width, height){
     const gridContainer = document.querySelector("#grid-container");
     let userInput = prompt("Please enter amount of squares (Max. 100)");
     if (userInput > 100){
-        return alert("Can't provide grid with more than 100 squares. Please enter amount of squares that is less than 100!")
+        return alert("Can't provide grid with more than 100 squares. Please enter amount of squares that is less than 100!");
+    }
+    else if (userInput === "" || userInput === "0" || userInput === null){
+        return createGrid;
     }
     let userWidth = 500/userInput-2 + "px";
     let userHeight = 500/userInput-2 + "px";
